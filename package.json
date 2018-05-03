@@ -1,17 +1,22 @@
 {
-  "name": "react-asyncLoader",
+  "name": "react-dynamic-loader",
   "version": "1.0.0",
   "description": "A react component for loading async component, with webpack chunk.",
   "main": "src/index.js",
   "author": "https://github.com/EvanLiu2968",
   "license": "MIT",
-  "repository": "EvanLiu2968/react-asyncLoader",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvanLiu2968/react-dynamic-loader.git"
+  },
   "scripts": {
     "build": "babel src -d lib",
     "kill-port": "kill -9 $(lsof -i:8888 |grep 'node'|aw '{print $2}') ",
     "lint": "eslint .",
     "fix": "eslint --fix .",
-    "ii": "npm install --registry https://registry.npm.taobao.org"
+    "ii": "npm install --registry https://registry.npm.taobao.org",
+    "reset-registry": "npm config set registry https://registry.npmjs.org",
+    "reset-taobao": "npm config set registry https://registry.npm.taobao.org"
   },
   "dependencies": {
     "react": "^16.0.0",

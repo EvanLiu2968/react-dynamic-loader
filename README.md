@@ -1,13 +1,23 @@
-# AsyncLoader
+# react-dynamic-loader
 
 > async load component for react with webpack chunk
+
+## Options
+
+| Option   |   Type   |  Default |  Description |
+|----------|----------|----------|--------------|
+| `loader` | Function | null | return Promise object |
+|`loading` | Boolean  |`<div className="async-loading">loading...</div>` | the JSX instead when component is loading |
+| `error`  | Boolean  |`<div className="async-error">some error occurred.</div>` | the JSX instead when error occurred |
+| `delay`  | Number   |  200 | time of the component delay to instead when it's loaded |
 
 ## Usage
 
 ### Basic usage
 
 ```javascript
-const Home = AsyncLoader({
+import dynamicLoader from 'react-dynamic-loader'
+const Home = dynamicLoader({
   loader: () => import(/* webpackChunkName: "my-chunk-name" */"../pages/home")
 });
 /* webpack build chunk files
@@ -19,8 +29,9 @@ chunk
 ### Add loading and error state
 
 ```javascript
+import dynamicLoader from 'react-dynamic-loader'
 import { Spin } from 'antd'
-const Home = AsyncLoader({
+const Home = dynamicLoader({
   loader: () => import(/* webpackChunkName: "my-chunk-name" */"../pages/home"),
   loading: <div className="async-loading"><Spin size="large" /></div>,
   error: <div className="async-error">some error occurred.</div>,
@@ -31,6 +42,7 @@ const Home = AsyncLoader({
 ### <span id="requireUsage">With require usage</span>
 
 ```javascript
+import dynamicLoader from 'react-dynamic-loader'
 const Home = AsyncLoader({
   loader: () => new Promise((resolve,reject)=>{
     require.ensure([], require => {
@@ -46,15 +58,6 @@ chunk
 ### Demo
 
 [https://www.evanliu2968.com.cn](https://www.evanliu2968.com.cn/system/home)
-
-## Options
-
-| Option   |   Type   |  Default |  Description |
-|----------|----------|----------|--------------|
-| `loader` | Function | null | return Promise object |
-|`loading` | Boolean  |`<div className="async-loading">loading...</div>` | the JSX instead when component is loading |
-| `error`  | Boolean  |`<div className="async-error">some error occurred.</div>` | the JSX instead when error occurred |
-| `delay`  | Number   |  200 | time of the component delay to instead when it's loaded |
 
 ## Introduction
 
