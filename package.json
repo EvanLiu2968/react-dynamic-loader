@@ -1,6 +1,6 @@
 {
   "name": "react-dynamic-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react component for loading async component, with webpack chunk.",
   "main": "src/index.js",
   "author": "https://github.com/EvanLiu2968",
