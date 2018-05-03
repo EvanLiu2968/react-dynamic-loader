@@ -1,6 +1,6 @@
 # react-dynamic-loader
 
-> dynamic async load component for react with webpack chunk
+> Dynamic async load component for react with webpack chunk
 
 ## Options
 

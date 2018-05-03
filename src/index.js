@@ -1,6 +1,6 @@
 /**
  * refer to react-loadable
- * @author EvanLiu
+ * @author EvanLiu2968
  * @export  {Function}
  * @param   {Object} options for AsyncLoader
  * @returns {Class} React Component
