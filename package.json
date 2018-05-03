@@ -9,6 +9,12 @@
     "type": "git",
     "url": "git+https://github.com/EvanLiu2968/react-dynamic-loader.git"
   },
+  "keywords": [
+    "react",
+    "react-router-v4",
+    "asyncloader",
+    "syntax-dynamic-import"
+  ],
   "scripts": {
     "build": "babel src -d lib",
     "kill-port": "kill -9 $(lsof -i:8888 |grep 'node'|aw '{print $2}') ",

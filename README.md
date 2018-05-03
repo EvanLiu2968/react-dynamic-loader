@@ -1,14 +1,14 @@
 # react-dynamic-loader
 
-> async load component for react with webpack chunk
+> dynamic async load component for react with webpack chunk
 
 ## Options
 
 | Option   |   Type   |  Default |  Description |
 |----------|----------|----------|--------------|
 | `loader` | Function | null | return Promise object |
-|`loading` | Boolean  |`<div className="async-loading">loading...</div>` | the JSX instead when component is loading |
-| `error`  | Boolean  |`<div className="async-error">some error occurred.</div>` | the JSX instead when error occurred |
+|`loading` | Boolean or JSX  |`<div className="async-loading">loading...</div>` | the JSX instead when component is loading |
+| `error`  | Boolean or JSX  |`<div className="async-error">some error occurred.</div>` | the JSX instead when error occurred |
 | `delay`  | Number   |  200 | time of the component delay to instead when it's loaded |
 
 ## Usage
@@ -57,7 +57,7 @@ chunk
 ```
 ### Demo
 
-[https://www.evanliu2968.com.cn](https://www.evanliu2968.com.cn/system/home)
+[https://www.evanliu2968.com.cn](https://www.evanliu2968.com.cn/system)
 
 ## Introduction
 
@@ -76,7 +76,7 @@ const Component = getComponent((callback) => {
 ```
 Demo is [With require usage](#requireUsage)
 
-2. `Syntax Dynamic Import`
+2. `syntax dynamic import`
 
 `import()` return the Promise object, callback the value of `export`
 
