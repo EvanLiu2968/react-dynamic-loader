@@ -2,6 +2,16 @@
 
 > Dynamic async load component for react with webpack chunk
 
+## Install
+```bash
+npm install react-dynamic-loader --save
+```
+```javascript
+import dynamicLoader from 'react-dynamic-loader'
+// or
+var dynamicLoader = require('react-dynamic-loader')
+```
+
 ## Options
 
 | Option   |   Type   |  Default |  Description |
