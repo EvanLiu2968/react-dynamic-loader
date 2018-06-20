@@ -1,5 +1,7 @@
 # react-dynamic-loader
 
+[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/EvanLiu2968/react-dynamic-loader)[![npm](https://img.shields.io/npm/v/react-dynamic-loader.svg)](https://www.npmjs.com/package/react-dynamic-loader)[![continuousphp](https://img.shields.io/continuousphp/git-hub/doctrine/dbal/master.svg)](https://www.npmjs.com/package/react-dynamic-loader)
+
 > Dynamic async load component for react with webpack chunk
 
 ## Install
@@ -106,3 +108,7 @@ the method require support with `babel-plugin-syntax-dynamic-import`
   ]
 }
 ```
+
+## License
+
+[MIT](LICENSE)
